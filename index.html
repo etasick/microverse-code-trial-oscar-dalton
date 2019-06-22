@@ -17,10 +17,17 @@
             <p id="description">Let us know how we can improve freeCodeCamp</p>
 
             <form id="survey-form" action="">
-                <label for="name">Name:</label>
+                <div class="row">
+                <label for="name">*Name:</label>
                 <input id="name" name="name" type="text" placeholder="Enter your name" required/>
-                <label for="email">Email:</label>
+                </div>
+                <div class="row">
+                <label for="email">*Email:</label>
                 <input id="email" name="email" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="row">
+                <input type="number" id="number" min="0" max="" class="col s12">
+                </div>
             </form>
         </div>
     </section>
