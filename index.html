@@ -29,10 +29,11 @@
 
                 <div class="row">
                     <label id="number-label" for="number">Age</label>
-                    <input type="number" id="number" min="0" max="" class="col s12" placeholder="Age">
+                    <input type="number" id="number" min="1" max="200" class="col s12" placeholder="Age">
                 </div>
 
                 <div class="row">
+                    <label for="dropdown">Which option best describes your current role?</label>
                     <select id="dropdown">
                         <option value="" disabled>Select an option</option>
                         <option  selected>Student</option>
@@ -44,18 +45,33 @@
                 </div>
 
                 <div class="row">
+                    <div class="col s6">
+                        * How likely is that you would recommend freeCodeCamp to a friend?
+                    </div>
+                    <div class="col s6">
                     <label>
-                        <input name="group1" type="radio" checked />
+                        <input name="group1" type="radio" checked value="1" />
                         <span>Definitely</span>
                     </label>
                     <label>
-                        <input name="group1" type="radio" />
+                        <input name="group1" type="radio"  value="2"/>
                         <span>Maybe</span>
                     </label>
                     <label>
-                        <input class="with-gap" name="group1" type="radio"  />
+                        <input class="with-gap" name="group1" type="radio"  value="3" />
                         <span>Not sure</span>
                     </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="dropdown2">What do you like most in FCC:</label>
+                    <select id="dropdown2">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option  value="2">Projects</option>
+                        <option  value="3">Community</option>
+                        <option value="4" >Open source</option>
+                    </select>
                 </div>
 
                 <div class="row">
@@ -78,6 +94,9 @@
                 <div class="row">
                     <label for="textarea">Any Comments or Suggestions?</label>
                     <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" id="submit" placeholder="Submit">
                 </div>
             </form>
         </div>
